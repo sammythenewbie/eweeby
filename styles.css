@@ -90,7 +90,7 @@ a.vid {
     justify-content: center;
     padding: 10px;
     background: #425d6d;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .grid-container > div {
     width: calc(50vw/4);
