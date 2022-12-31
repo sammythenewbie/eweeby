@@ -24,6 +24,7 @@ header {
     justify-content: center;
  }
 .srch {
+    width: 40vw;
     display: flex;
     margin: auto;
     align-items: center;
@@ -31,7 +32,7 @@ header {
 }
 input {
     position: initial;
-    width: 300px;
+    width: 90%;
     height: 50px;
     border: 3px solid #00abff;
     border-radius: 100px;
@@ -70,34 +71,41 @@ a {
 }
 a.vid {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-    padding: 10px;
+    margin-top: 5px;
+    
 }
 .grid-container {
     width: 50vw;
     height: 50vh;
     display: flex;
-    grid-gap: 10px;
-    padding: 10px;
-    grid-auto-flow: row;
+    flex-wrap: wrap;
+    /*grid-gap: 10px;*/
+    flex-direction: row;
+    /*grid-auto-flow: row;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    aspect-ratio:16/9;
+    grid-template-rows: auto auto auto;*/
+    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     background: #425d6d;
-    overflow-x: scroll;
+    overflow: scroll;
 }
-.grid-container > dev {
-    width: 150px;
+.grid-container > div {
+    width: calc(50vw/4);
     height: 100px;
     object-fit: contain;
-    padding: 10px;
-    aspect-ratio:16/9;
     background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+    text-align: center;
+    margin: auto auto 45px auto;
+    font-size: 20px;
+    
+    
+}
+.grid-container > div > img {
+    width: 100%;
+    height: 100%;
     
 }
 video {
@@ -198,5 +206,5 @@ img.ft {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 8%;
+    right: 3%;
 }
